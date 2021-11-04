@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "allowsBounceVertical": "NO"
+  },
+  "usingComponents": {}
+}

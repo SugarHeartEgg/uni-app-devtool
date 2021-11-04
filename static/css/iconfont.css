@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "zbw";
+	/* Project id 2909803 */
+	src: url('//at.alicdn.com/t/font_2909803_ep1yjl8utg.woff2?t=1635842140781') format('woff2');
+}
+
+.zbw {
+	font-family: "zbw" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.zbw-icon-dangan:before {
+	content: "\e8a9";
+}
+
+.zbw-icon-caigou:before {
+	content: "\e8aa";
+}
+
+.zbw-icon-xinzeng:before {
+	content: "\e8bb";
+}
+
+.zbw-icon-shanchu:before {
+	content: "\e8bc";
+}
+
+.zbw-icon-lieshezhi:before {
+	content: "\e8bd";
+}
+
+.zbw-icon-shuaxin:before {
+	content: "\e8be";
+}

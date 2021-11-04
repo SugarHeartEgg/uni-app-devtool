@@ -1,0 +1,10 @@
+{
+  "pullRefresh": false,
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "mescroll-uni": "/uni_modules/mescroll-uni/components/mescroll-uni/mescroll-uni",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "theme-warp": "/pages/index/selectTheme/index"
+  }
+}

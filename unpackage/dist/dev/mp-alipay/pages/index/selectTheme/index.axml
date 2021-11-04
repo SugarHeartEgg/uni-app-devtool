@@ -1,0 +1,1 @@
+<view style="{{(skin)}}"><slot></slot></view>
