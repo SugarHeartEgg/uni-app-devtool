@@ -22,7 +22,7 @@ H5 小程序(微信，支付宝，百度) app 均可使用
 
 ### 下拉，上拉功能
 `
-请使用 mescroll-uni 版本
+请使用 mescroll-body 版本
 [](https://www.mescroll.com/uni.html#begin)
 在父组件中使用，需在pages.js 对应的 文件路径 配置一下
 `
