@@ -17,8 +17,16 @@ export default {
 	methods: {
 		// 切换皮肤
 		changeTheme(e) {
-			let item = this.themeList[Number(e.detail.value)].value;
-			this.$store.commit("app/skinPeeler", item);
+			let currentColor = this.themeList[Number(e.detail.value)].color;
+			let currentName = this.themeList[Number(e.detail.value)].name;
+			let skin = this.themeList[Number(e.detail.value)].value;
+			this.$store.commit("app/skinPeeler", {
+				skin,
+				params: {
+					currentColor,
+					currentName
+				}
+			});
 		}
 	}
 }

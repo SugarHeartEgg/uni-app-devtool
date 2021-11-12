@@ -13,10 +13,12 @@ export const storeDefaultColorData = defaultColorData.map((item, index) => {
 
 export const themeListData = [{
 		value: defaultColorData,
-		name: '默认'
+		color: "#227fff",
+		name: 'sky',
 	},
 	{
 		value: pickColorData,
-		name: '粉色'
+		color: "#f021ff",
+		name: 'pink'
 	},
 ]

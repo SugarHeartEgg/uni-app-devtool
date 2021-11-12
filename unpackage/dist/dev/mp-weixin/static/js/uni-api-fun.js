@@ -3,7 +3,7 @@
  */
 
 // 页面跳转，权限控制
-export const navigateTo = function(option, isSwitchTab, isRedirectTo) {
+export const navigateTo = (option, isSwitchTab, isRedirectTo) => {
 	if (typeof option === "string") {
 		if (isSwitchTab) {
 			uni.switchTab({
@@ -35,6 +35,7 @@ export const navigateTo = function(option, isSwitchTab, isRedirectTo) {
 export const navigateBack = () => {
 	uni.navigateBack();
 }
+
 export const relaunch = (url) => {
 	uni.reLaunch({
 		url: url

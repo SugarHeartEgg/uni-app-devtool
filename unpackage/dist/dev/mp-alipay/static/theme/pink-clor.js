@@ -1,6 +1,6 @@
 export const pickColorData = [{
 		name: '--nav-bg',
-		value: '#ffd1d9'
+		value: '#f021ff'
 	},
 	{
 		name: '--nav-color',

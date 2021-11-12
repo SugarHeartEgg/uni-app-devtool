@@ -1,6 +1,6 @@
 export const defaultColorData = [{
 		name: '--nav-bg',
-		value: '#17171f'
+		value: '#227fff'
 	},
 	{
 		name: '--nav-color',

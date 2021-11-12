@@ -1,12 +1,37 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/index",
+    "pages/index/index",
+    "pages/index/net-work",
+    "pages/my/index",
+    "pages/index/left-menu"
   ],
   "subPackages": [],
   "window": {
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white",
     "backgroundColorTop": "#FFFFFF"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/index/left-menu"
+      },
+      {
+        "pagePath": "pages/my/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "usingComponents": {}
 }

@@ -13,7 +13,9 @@ const state = {
 	size: uni.getStorageSync('size') || 'medium',
 	isCollapse: false,
 	isSearch: false,
-	skin: storeDefaultColorData
+	skin: storeDefaultColorData,
+	currentColor: "#227fff",
+	currentName: "sky"
 }
 
 const mutations = {
@@ -54,12 +56,17 @@ const mutations = {
 	},
 
 	// 皮肤更换
-	skinPeeler(state, skin = []) {
+	skinPeeler(state, {
+		skin = [],
+		params
+	}) {
 		// 将皮肤配置JSON转为以 ; 分割的字符串（style 值）
 		let style = skin.map((item, index) => {
 			return `${item.name}:${item.value}`
 		}).join(";");
 		state.skin = style;
+		state.currentColor = params.currentColor;
+		state.currentName = params.currentName;
 	}
 }
 

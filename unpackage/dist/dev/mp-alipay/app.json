@@ -1,10 +1,30 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/index",
+    "pages/index/index",
+    "pages/index/net-work",
+    "pages/my/index",
+    "pages/index/left-menu"
   ],
   "subPackages": [],
   "window": {
     "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "items": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/index/left-menu"
+      },
+      {
+        "pagePath": "pages/my/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
   },
   "usingComponents": {}
 }

@@ -4,8 +4,12 @@ import {
 import {
 	title
 } from "./title.js"
+import {
+	bar
+} from "./tab-bar.js"
 
 export default {
 	login,
-	title
+	title,
+	bar
 }

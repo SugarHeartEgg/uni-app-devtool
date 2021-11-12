@@ -1,18 +1,9 @@
 {
-    "id": "uView-UI",
-    "name": "uView UI已发布Sketch和Axure设计资源",
-    "version": "1.8.4",
-    "description": "uView正在研发2.0版本，将会全面兼容Nvue，并引入大量激动人心的创新功能",
+    "id": "sehochen-left-menu",
+    "name": "左侧菜单",
+    "version": "1.0.2",
+    "description": "左侧菜单",
     "keywords": [
-        "uView",
-        "uViewUI",
-        "UI",
-        "UI框架",
-        "uni-app"
-    ],
-    "dependencies": {
-        "lodash": "^4.17.21",
-        "md5": "^2.3.0",
-        "moment": "^2.29.1"
-    }
+        "左侧菜单"
+    ]
 }

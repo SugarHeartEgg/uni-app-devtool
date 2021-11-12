@@ -6,24 +6,55 @@
 		// npm安装方式
 		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 
-
 		// uni-ui 规则如下配置
-		"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+
+		// components 目录下  需要 转为全局组件的配置
+		"^zbw-(.*)": "@/components/zbw-$1/zbw-$1.vue"
 	},
 
 	// 主包
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
+		{ // 引导页
+			"path": "pages/home/index"
+		},
+		{ // 首页 工具测试页
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTextStyle": "black",
 				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black",
 				"disableScroll": false, // 删除此项: mescroll-body必须允许原生页面滚动, 默认false
 				"enablePullDownRefresh": false, // 删除此项: 不开启系统自带的下拉刷新, 默认false
 				"app-plus": {
 					"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
 				}
+			}
+		},
+		{ // 无网络页
+			"path": "pages/index/net-work",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black",
+				"disableScroll": false, // 删除此项: mescroll-body必须允许原生页面滚动, 默认false
+				"enablePullDownRefresh": false, // 删除此项: 不开启系统自带的下拉刷新, 默认false
+				"app-plus": {
+					"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				}
+			}
+		},
+		{ // 我的
+			"path": "pages/my/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{ // 左侧滑动菜单
+			"path": "pages/index/left-menu",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
 			}
 		}
 	],
@@ -38,12 +69,16 @@
 		"mp-alipay": {
 			"allowsBounceVertical": "NO"
 		}
+	},
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index"
+		}, {
+			"pagePath": "pages/index/left-menu"
+		}, {
+			"pagePath": "pages/my/index"
+		}, {
+			"pagePath": "pages/my/index"
+		}]
 	}
-	// "tabBar": {
-	// 	"color": "#7A7E83",
-	// 	"selectedColor": "#ff7213",
-	// 	"borderStyle": "black",
-	// 	"backgroundColor": "#ffffff"
-	// 	// "list": []
-	// }
 }
